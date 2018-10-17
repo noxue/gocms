@@ -13,6 +13,12 @@
 
 [SEO处理工具](https://github.com/noxue/gocms-seo)
 
+## 部署
+
+* 把配置文件 config.default.json 复制一份改名为 config.json，根据文件中的配置修改配置内容
+* 编译成可执行程序，和config.json放到一个目录下就可以运行
+* **注意** 如果要上传文件，必须要配置七牛
+
 ### response error code
 
 * `1000` post data error
