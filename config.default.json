@@ -1,0 +1,45 @@
+{
+  "app": {
+    "key": "FGHJKLOIUYTgbnmkasudfasdfa567895315asdfasdfadsf", //加密jwt用到的，请修改成随机字符串
+    "username": "admin",
+    "password": "admin888" // 密码。。因为只要一个管理员，暂时没写用户管理
+  },
+  "db": {
+    "host": "127.0.0.1:27017",  // mongodb 地址
+    "dbname": "noxue",  // 数据库名
+    "username": "noxue",  // 数据库用户名，暂时没用到，所以安装mongodb不要设置用户密码，默认是无需密码的
+    "password": "noxue"
+  },
+  "server": {
+    "port": 80  // api服务端口
+  },
+  "translate": {
+    "baidu": {
+      "id": "20181012000218535",      // 百度翻译接口appid，主要用在把中文标题翻译成英文，请到http://api.fanyi.baidu.com申请
+      "key": "******************" // key
+    }
+  },
+  "upload": {
+    "qiniu": {
+      "id": "**********",  // 七牛云存储。qiniu.com 申请
+      "key": "**************",
+      "bucket": "*****",
+      "callback":"http://api.noxue.com/api/v1/upload/callback"  // 回调地址，上传成功后，七牛会请求这个地址
+    },
+    "types": {
+      "article": { // 表示是关于文章的上传。这个主要考虑后期增加问答模块，把附件分开管理
+        "prefix": "article", // 区分不同模块，生成的文件名会以这个名字为前缀，比如 /article/2018/01/03/111213.jpg
+        "allow": [  // 设置允许那些类型的后缀的文件上传
+          "png",
+          "jpg",
+          "jpeg",
+          "gif",
+          "zip",
+          "rar",
+          "7z"
+        ],
+        "size": 10  // 允许上传多大的文件，单位是MB
+      }
+    }
+  }
+}
