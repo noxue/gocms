@@ -3,11 +3,15 @@
 
 ## 说明
 
-* 本项目只是后台接口，需要配合前端界面和前端管理界面
+* 本项目只是不学网的一部分，全部项目组合起来构成不学网
 
-[前端界面项目地址](https://github.com/noxue/gocms-ui)
-[后台界面项目地址](https://github.com/noxue/gocms-admin-ui)
+[后台API](https://github.com/noxue/gocms)
 
+[前端界面](https://github.com/noxue/gocms-ui)
+
+[后台界面](https://github.com/noxue/gocms-admin-ui)
+
+[SEO处理工具](https://github.com/noxue/gocms-seo)
 
 ### response error code
 
